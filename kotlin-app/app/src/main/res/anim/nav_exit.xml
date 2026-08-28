@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Salida del destino actual al navegar hacia adelante: se desvanece hacia
+     la izquierda con aceleración suave. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+    <translate
+        android:duration="200"
+        android:fromXDelta="0%"
+        android:toXDelta="-8%" />
+    <alpha
+        android:duration="180"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+</set>

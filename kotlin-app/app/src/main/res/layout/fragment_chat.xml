@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFinalizarConsulta"
+        style="@style/Button.Chip.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/chat_finalizar_consulta"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/activeConsultaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerChat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingVertical="10dp"
+            tools:listitem="@layout/item_chat_bubble" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/quickReplies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            app:chipSpacingHorizontal="7dp"
+            app:singleLine="false" />
+
+        <LinearLayout
+            android:id="@+id/typingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_bubble_agent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:id="@+id/typingDot1"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_typing_dot" />
+
+            <View
+                android:id="@+id/typingDot2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_typing_dot" />
+
+            <View
+                android:id="@+id/typingDot3"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_typing_dot" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_pill"
+                android:orientation="horizontal"
+                android:paddingHorizontal="18dp">
+
+                <EditText
+                    android:id="@+id/inputMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/chat_input_placeholder"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text"
+                    android:textColorHint="@color/color_neutral_600"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnSend"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_send_button_circle"
+                android:clickable="true"
+                android:contentDescription="@string/chat_send_content_description"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/idleConsultaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp">
+
+        <TextView
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/chat_idle_message"
+            android:textColor="@color/color_neutral_700" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComenzarConsulta"
+            style="@style/Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="24dp"
+            android:text="@string/chat_comenzar_consulta" />
+
+    </LinearLayout>
+
+</LinearLayout>

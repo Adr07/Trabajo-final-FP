@@ -1,0 +1,31 @@
+<odoo noupdate="1">
+    <record id="demo_product_espresso" model="product.template">
+        <field name="name">Espresso</field>
+        <field name="list_price">1.80</field>
+        <field name="sale_ok">1</field>
+    </record>
+
+    <record id="demo_product_cappuccino" model="product.template">
+        <field name="name">Cappuccino</field>
+        <field name="list_price">2.80</field>
+        <field name="sale_ok">1</field>
+    </record>
+
+    <record id="demo_product_te_verde" model="product.template">
+        <field name="name">Té verde</field>
+        <field name="list_price">2.20</field>
+        <field name="sale_ok">1</field>
+    </record>
+
+    <record id="demo_product_croissant" model="product.template">
+        <field name="name">Croissant</field>
+        <field name="list_price">2.50</field>
+        <field name="sale_ok">1</field>
+    </record>
+
+    <record id="demo_product_tarta_queso" model="product.template">
+        <field name="name">Tarta de queso</field>
+        <field name="list_price">3.90</field>
+        <field name="sale_ok">1</field>
+    </record>
+</odoo>

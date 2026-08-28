@@ -1,0 +1,25 @@
+# --- Agente Python (agent/) ---
+agent/.venv/
+agent/.env
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+agent/uvicorn_debug.log
+*.log
+
+# --- App Android (kotlin-app/) ---
+# (kotlin-app/.gitignore ya cubre .gradle/, .idea/, local.properties, pero
+# solo el build/ de nivel superior, no el de cada módulo — se cubre aquí)
+**/build/
+.cxx/
+
+# --- Editor / SO ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Capturas y volcados temporales de depuración ---
+screenshot_*.png
+ui*.xml
+*.stackdump

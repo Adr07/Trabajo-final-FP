@@ -1,0 +1,31 @@
+<odoo noupdate="1">
+    <!--
+        Usuarios Portal reales para los clientes de demo (Café Aroma), para
+        poder probar el login real de la app (agent/nodes/auth_login.py).
+        Contraseña compartida solo para pruebas — cámbiala antes de exponer
+        esto fuera de un entorno local.
+    -->
+    <record id="demo_user_ana" model="res.users">
+        <field name="login">ana.beltran@example.com</field>
+        <field name="password">demo12345</field>
+        <field name="partner_id" ref="demo_partner_ana" />
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]" />
+        <field name="notification_type">email</field>
+    </record>
+
+    <record id="demo_user_luis" model="res.users">
+        <field name="login">luis.mendoza@example.com</field>
+        <field name="password">demo12345</field>
+        <field name="partner_id" ref="demo_partner_luis" />
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]" />
+        <field name="notification_type">email</field>
+    </record>
+
+    <record id="demo_user_maria" model="res.users">
+        <field name="login">maria.ferreiro@example.com</field>
+        <field name="password">demo12345</field>
+        <field name="partner_id" ref="demo_partner_maria" />
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]" />
+        <field name="notification_type">email</field>
+    </record>
+</odoo>

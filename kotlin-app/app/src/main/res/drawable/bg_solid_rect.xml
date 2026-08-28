@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Badge en forma de píldora (usa un radio grande fijo; con el alto típico
+     de un badge de texto esto redondea totalmente los extremos). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/color_neutral_200" />
+    <corners android:radius="20dp" />
+</shape>

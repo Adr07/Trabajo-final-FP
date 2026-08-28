@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#F3F2F2</color>
+    <color name="color_text">#201E1D</color>
+    <color name="color_accent">#EC3013</color>
+
+    <color name="color_accent_100">#FFF2EF</color>
+    <color name="color_accent_600">#DD2B0F</color>
+    <color name="color_accent_700">#AE1800</color>
+    <color name="color_accent_900">#4D170E</color>
+
+    <color name="color_neutral_200">#DEDDDD</color>
+    <color name="color_neutral_600">#6D6A6A</color>
+    <color name="color_neutral_700">#514E4E</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_divider">#1F201E1D</color>
+    <color name="color_scrim">#8C201E1D</color>
+</resources>

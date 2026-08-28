@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Asistente de soporte</string>
+
+    <string name="login_title">Asistente\nde soporte</string>
+    <string name="login_subtitle">Entra con tu cuenta de cliente</string>
+    <string name="login_credentials_kicker">Acceso de cliente</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_enter">Iniciar sesión</string>
+    <string name="login_error_generic">No se pudo iniciar sesión.</string>
+    <string name="login_settings">Ajustes del servidor</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_agent_kicker">Servidor del agente</string>
+    <string name="settings_agent_hint">URL base a la que la app envía las preguntas del chat. Cámbiala si el agente corre en otra máquina o entorno.</string>
+    <string name="settings_agent_url_hint">http://10.0.2.2:8000/</string>
+    <string name="settings_save">Guardar</string>
+    <string name="settings_reset">Restaurar</string>
+    <string name="settings_saved">Guardado</string>
+
+    <string name="tab_chat">Chat</string>
+    <string name="tab_inbox">Consultas</string>
+
+    <string name="chat_kicker">Agente virtual · odoo17-prod</string>
+    <string name="chat_title">Conversación</string>
+    <string name="chat_send_content_description">Enviar</string>
+    <string name="chat_input_placeholder">Describe el problema…</string>
+    <string name="chat_idle_message">No tienes ninguna consulta abierta.</string>
+    <string name="chat_comenzar_consulta">Comenzar consulta</string>
+    <string name="chat_finalizar_consulta">Finalizar consulta</string>
+    <string name="chat_form_agendar_kicker">Agendar cita</string>
+    <string name="chat_form_motivo_hint">Motivo</string>
+    <string name="chat_form_fecha_hint">Fecha y hora</string>
+    <string name="chat_form_duracion_hint">Duración en minutos (opcional)</string>
+    <string name="chat_form_submit">Agendar</string>
+
+    <string name="inbox_kicker">Café Aroma · historial</string>
+    <string name="inbox_title">Consultas</string>
+    <string name="inbox_empty">Todavía no tienes consultas cerradas.</string>
+    <string name="inbox_empty_filtered">No tienes consultas en este estado.</string>
+    <string name="inbox_error">No se pudieron cargar tus consultas.</string>
+    <string name="consulta_detail_kicker">Consulta cerrada</string>
+    <string name="consulta_detail_empty">Esta consulta no tiene mensajes.</string>
+    <string name="consulta_state_pendiente">Pendiente</string>
+    <string name="consulta_state_resuelta">Resuelta</string>
+
+    <string name="ticket_back">Volver</string>
+</resources>

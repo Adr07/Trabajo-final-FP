@@ -1,0 +1,19 @@
+<odoo noupdate="1">
+    <record id="demo_partner_ana" model="res.partner">
+        <field name="name">Ana Beltrán</field>
+        <field name="email">ana.beltran@example.com</field>
+        <field name="phone">+34 611 222 333</field>
+    </record>
+
+    <record id="demo_partner_luis" model="res.partner">
+        <field name="name">Luis Mendoza</field>
+        <field name="email">luis.mendoza@example.com</field>
+        <field name="phone">+34 622 333 444</field>
+    </record>
+
+    <record id="demo_partner_maria" model="res.partner">
+        <field name="name">María Ferreiro</field>
+        <field name="email">maria.ferreiro@example.com</field>
+        <field name="phone">+34 633 444 555</field>
+    </record>
+</odoo>

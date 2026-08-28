@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_partner_form_assistant_agent" model="ir.ui.view">
+        <field name="name">res.partner.form.assistant.agent</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Agente IA" name="assistant_agent">
+                    <group string="Permisos del agente de IA para este cliente">
+                        <field name="assistant_can_agendar_cita" />
+                        <field name="assistant_can_modificar_cita" />
+                        <field name="assistant_can_cancelar_cita" />
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+    <record id="group_agent_readonly" model="res.groups">
+        <field name="name">Agente IA · Solo lectura</field>
+        <field name="comment">
+            Grupo de solo lectura para el usuario de integración del agente de
+            IA externo (carpeta agent/ del repo). No debe tener permiso de
+            escritura, creación ni borrado salvo excepciones explícitas y muy
+            acotadas por modelo (hoy: calendar.event, para agendar/modificar/
+            cancelar reservas) — ver security/ir.model.access.csv de este
+            mismo módulo.
+        </field>
+    </record>
+</odoo>

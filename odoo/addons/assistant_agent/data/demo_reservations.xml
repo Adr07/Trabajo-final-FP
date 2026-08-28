@@ -1,0 +1,24 @@
+<odoo noupdate="1">
+    <record id="demo_reservation_ana" model="calendar.event">
+        <field name="name">Mesa para 2 — Ana Beltrán</field>
+        <field name="start" eval="(DateTime.today() + relativedelta(days=1, hour=10, minute=0, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="stop" eval="(DateTime.today() + relativedelta(days=1, hour=11, minute=0, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="partner_ids" eval="[(6, 0, [ref('demo_partner_ana')])]"/>
+        <field name="description">Mesa junto a la ventana.</field>
+    </record>
+
+    <record id="demo_reservation_luis" model="calendar.event">
+        <field name="name">Recogida de pedido — Luis Mendoza</field>
+        <field name="start" eval="(DateTime.today() + relativedelta(days=2, hour=17, minute=30, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="stop" eval="(DateTime.today() + relativedelta(days=2, hour=18, minute=0, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="partner_ids" eval="[(6, 0, [ref('demo_partner_luis')])]"/>
+    </record>
+
+    <record id="demo_reservation_maria" model="calendar.event">
+        <field name="name">Reserva para grupo — María Ferreiro</field>
+        <field name="start" eval="(DateTime.today() + relativedelta(days=3, hour=9, minute=0, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="stop" eval="(DateTime.today() + relativedelta(days=3, hour=10, minute=30, second=0)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="partner_ids" eval="[(6, 0, [ref('demo_partner_maria')])]"/>
+        <field name="description">Grupo de 6 personas, celebración de cumpleaños.</field>
+    </record>
+</odoo>

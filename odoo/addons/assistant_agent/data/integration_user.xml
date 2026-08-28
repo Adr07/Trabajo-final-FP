@@ -1,0 +1,9 @@
+<odoo noupdate="1">
+    <record id="user_agent_integration" model="res.users">
+        <field name="name">Agente IA (integración)</field>
+        <field name="login">agente.ia@integracion.local</field>
+        <field name="password">agente-ia-cambia-esta-clave</field>
+        <field name="groups_id" eval="[(6, 0, [ref('group_agent_readonly')])]" />
+        <field name="notification_type">email</field>
+    </record>
+</odoo>

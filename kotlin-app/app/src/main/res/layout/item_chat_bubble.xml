@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="6dp">
+
+    <LinearLayout
+        android:id="@+id/bubbleContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <TextView
+            android:id="@+id/who"
+            style="@style/Text.Kicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_neutral_700"
+            tools:text="ASISTENTE · 10:44" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            tools:text="Es Frigorífico Sur S.A. (id 4821)." />
+
+        <LinearLayout
+            android:id="@+id/formAgendarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card_outline"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Text.Kicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_form_agendar_kicker" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/chat_form_motivo_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/formInputMotivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/chat_form_fecha_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/formInputFechaHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:focusable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/chat_form_duracion_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/formInputDuracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmitForm"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/chat_form_submit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.odooassistant.support.ui.chat.ChatFragment"
+        android:label="Chat" />
+
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.odooassistant.support.ui.inbox.InboxFragment"
+        android:label="Consultas" />
+
+    <fragment
+        android:id="@+id/consultaDetailFragment"
+        android:name="com.odooassistant.support.ui.inbox.ConsultaDetailFragment"
+        android:label="Consulta">
+        <argument
+            android:name="start"
+            app:argType="string" />
+        <argument
+            android:name="stop"
+            app:argType="string" />
+        <argument
+            android:name="transcript"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

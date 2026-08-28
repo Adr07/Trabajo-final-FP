@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_assistant_consulta_list" model="ir.ui.view">
+        <field name="name">assistant.consulta.list</field>
+        <field name="model">assistant.consulta</field>
+        <field name="arch" type="xml">
+            <tree string="Consultas">
+                <field name="partner_id" />
+                <field name="start" />
+                <field name="stop" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_assistant_consulta_form" model="ir.ui.view">
+        <field name="name">assistant.consulta.form</field>
+        <field name="model">assistant.consulta</field>
+        <field name="arch" type="xml">
+            <form string="Consulta">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="pendiente,resuelta" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="partner_id" />
+                        <field name="start" />
+                        <field name="stop" />
+                    </group>
+                    <field name="transcript" widget="text" />
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_assistant_consulta" model="ir.actions.act_window">
+        <field name="name">Consultas</field>
+        <field name="res_model">assistant.consulta</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_assistant_agent_root" name="Asistente IA" sequence="90" />
+    <menuitem
+        id="menu_assistant_consulta"
+        name="Consultas"
+        parent="menu_assistant_agent_root"
+        action="action_assistant_consulta"
+        sequence="10" />
+</odoo>

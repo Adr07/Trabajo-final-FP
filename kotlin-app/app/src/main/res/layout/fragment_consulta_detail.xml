@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <TextView
+        android:id="@+id/stateBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_solid_rect"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="6dp"
+        android:textAllCaps="true"
+        android:textSize="9.5sp"
+        tools:text="Pendiente" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/transcript"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/color_text"
+            tools:text="Cliente: quiero agendar una mesa para el sábado a las 20:00.\nAsistente: hecho, te espero el sábado a las 20:00." />
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+# Verificar versiones actuales en la documentación oficial antes de instalar
+# (no fijar versiones a ciegas desde este archivo).
+openai-agents
+fastapi
+fastapi-cli
+uvicorn
+python-dotenv

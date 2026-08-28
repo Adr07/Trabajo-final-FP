@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearance.AsistenteOdoo.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.AsistenteOdoo.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.AsistenteOdoo.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+    <style name="Theme.AsistenteOdoo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_text</item>
+        <item name="colorPrimaryDark">@color/color_text</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorSecondary">@color/color_accent</item>
+        <item name="android:windowBackground">@color/color_bg</item>
+        <item name="android:textColorPrimary">@color/color_text</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.AsistenteOdoo.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.AsistenteOdoo.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.AsistenteOdoo.Large</item>
+    </style>
+
+    <style name="Text.Kicker" parent="">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/color_accent_700</item>
+    </style>
+
+    <style name="Text.Title" parent="">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Text.Body" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingMultiplier">1.35</item>
+    </style>
+
+    <style name="Text.Mono" parent="">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="backgroundTint">@color/color_accent</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- "Outline" ahora es un botón tonal sin borde: relleno neutro suave,
+         sin stroke, coherente con el look minimalista de apps de mensajería. -->
+    <style name="Button.Outline" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="backgroundTint">@color/color_neutral_200</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Botón tonal pequeño para acciones secundarias dentro de una barra
+         (p. ej. "Finalizar consulta"): se nota como botón real, pero no
+         compite en peso visual con los botones primarios de pantalla completa. -->
+    <style name="Button.Chip.Accent" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="backgroundTint">@color/color_accent_100</item>
+        <item name="android:textColor">@color/color_accent_700</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingHorizontal">14dp</item>
+        <item name="iconPadding">4dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+</resources>
