@@ -23,3 +23,8 @@ Thumbs.db
 screenshot_*.png
 ui*.xml
 *.stackdump
+
+# --- Documentación (memoria, presentaciones, diagramas) ---
+# Se entrega aparte (no vía git): PDF/HTML de la memoria, presentaciones,
+# diagramas y capturas de demostración.
+docs/
